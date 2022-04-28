@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "vazir";
+  src: url("../font/eot/Vazir-Thin.eot") format("eot"),
+    /* IE6-IE8 */ url("../font/woff2/Vazir-Thin.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../font/woff/Vazir-Thin.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../font/ttf/Vazir-Thin.ttf") format("ttf"); /* Safari, Android, iOS */
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+    font-family: 'vazir';
+}
+ul,
+ol{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+button,
+input,
+select,
+textarea{
+    font-family: inherit;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 50000s ease-in-out 0s, color 5000s ease-in-out 0s;
+  
+  
+}
