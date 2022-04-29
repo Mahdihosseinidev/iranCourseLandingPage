@@ -139,3 +139,9 @@
 .search:focus-within .search__stand::after {
   transform: rotate(45deg);
 }
+
+@media only screen and (max-width: 768px) {
+  .search:focus-within{
+    width: 12rem;
+  }
+}

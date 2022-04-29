@@ -9,46 +9,74 @@
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/search.css" />
-    <link rel="stylesheet" href="./css/navAndLogo.css.css" />
+    <link rel="stylesheet" href="./css/navAndLogo.css" />
   </head>
   <body>
     <section class="navbar">
-      <div class="navbar__search-box">
-        <div class="search">
-          <form class="search__form" action="#">
+      <div
+        class="container flex justify-content-space-between align-items-center pt-2 pb-2"
+      >
+        <div class="navbar__search-box">
+          <div class="search">
+            <form class="search__form" action="#">
+              <input
+                class="search__input"
+                type="text"
+                placeholder="جستو جو کنید"
+                name="search"
+                id="search"
+              />
+              <button class="search__button">
+                <span class="search__circle"></span>
+                <span class="search__stand"></span>
+              </button>
+            </form>
+          </div>
+        </div>
+        <nav class="navbar__nav">
+          <div class="nav">
             <input
-              class="search__input"
-              type="text"
-              placeholder="جستو جو کنید"
-              name="search"
-              id="search"
+              type="checkbox"
+              class="nav__burger-checkbox"
+              id="burgermenu"
             />
-            <button class="search__button">
-              <span class="search__circle"></span>
-              <span class="search__stand"></span>
-            </button>
-          </form>
+            <label class="nav__burger-label" for="burgermenu">
+              <span></span> 
+              <span></span>
+              <span></span>
+            </label>
+            <ul class="nav__lists">
+              <li class="nav__list">
+                <a href="/" class="nav__link">خــانه</a>
+              </li>
+              <li class="nav__list">
+                <a href="/" class="nav__link">دوره ها</a>
+              </li>
+              <li class="nav__list">
+                <a href="/" class="nav__link">مــدرسین</a>
+              </li>
+              <li class="nav__list">
+                <a href="/" class="nav__link">دربـــاره مـا</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="navbar__logo">
+          <a href="#">
+            <img
+              class="hidden show-large"
+              src="/image/logo-header.png"
+              alt="logo large"
+            />
+            <img
+              class="hidden show-small"
+              src="./image/logo-header-small.png"
+              alt="logo small"
+            />
+          </a>
         </div>
-      </div>
-      <nav class="navbar__nav">
-        <div class="nav">
-          <ul class="nav_lists">
-            <li class="nav__list"><a href="/" class="nav__link">خــانه</a></li>
-            <li class="nav__list"><a href="/" class="nav__link">دوره ها</a></li>
-            <li class="nav__list">
-              <a href="/" class="nav__link">مــدرسین</a>
-            </li>
-            <li class="nav__list">
-              <a href="/" class="nav__link">دربـــاره مـا</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="navbar__logo">
-        <a href="#">
-          <img src="/image/logo-header.png" alt="logo larg" />
-        </a>
       </div>
     </section>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
 </html>
