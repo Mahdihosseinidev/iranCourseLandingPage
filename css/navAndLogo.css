@@ -4,12 +4,58 @@
   align-items: center;
 }
 
-.nav__link {
-  padding: 1.3rem;
+.nav__list {
   position: relative;
+}
+.nav__list:hover > ul.nav__sublists1{
+  transform: scale(1);
+}
+/* sublists1 ul */
+.nav__sublists1,
+.nav__sublists2 {
+  position: absolute;
+  width: 20rem;
+  background-color: #fff;
+  border-top: 0.3rem solid #e76f51;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 .4rem 0 #444;
+  transform: scale(0);
+  transform-origin: top right;
   transition: all .3s ease;
 }
-.nav__link:hover{
+/* sublist1 li */
+.nav__sublist1{
+  position: relative;
+}
+.nav__sublist1:hover > ul.nav__sublists2{
+  transform: scale(1);
+}
+.nav__sublists1 a {
+  display: flex;
+  align-items: center;
+  padding: 1.3rem;
+  color: #444;
+  transition: all .3s ease;
+}
+.nav__sublists1 a:hover{
+  padding-right: 1.5rem;
+  background-color: #f1f1f1;
+  color: #0d62da;
+}
+/* sublists2 ul */
+.nav__sublists2 {
+  position: absolute;
+  right: 100%;
+  top: 0;
+}
+.nav__link {
+  position: relative;
+  display: block;
+  padding: 1.3rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.nav__link:hover {
   color: #3c4858;
 }
 
@@ -21,24 +67,24 @@
   width: 0%;
   height: 3px;
   background-color: #0d62da;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   transform: translateX(-50%);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
-.nav__link:hover::after{
+.nav__link:hover::after {
   width: 100%;
 }
 
-.nav__arrow{
+.nav__arrow {
   position: absolute;
   top: 40%;
   left: 0;
-  width: .7rem;
-  height: .7rem;
+  width: 0.7rem;
+  height: 0.7rem;
   border: 1px solid #3c4858;
   border-width: 0 1px 1px 0;
   transform: rotate(45deg);
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 .nav__link:hover > span {
   transform: rotate(225deg);
