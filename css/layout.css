@@ -27,6 +27,10 @@ ol {
 a {
   text-decoration: none;
   color: #0d62da;
+  transition: color .3s ease;
+}
+a:hover{
+  color: #e76f51;
 }
 button,
 input,
