@@ -2,6 +2,7 @@
     /* l1 Lists ul */
     &__lists {
         position: relative;
+        z-index: 30;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -188,6 +189,7 @@
             border-radius: 0.5rem;
             background-color: $color-blue2;
             transition: all 0.3s $cubic-bezier;
+            animation: burgermenu-color 2s ease infinite alternate;
         }
 
         & :nth-child(1) {
